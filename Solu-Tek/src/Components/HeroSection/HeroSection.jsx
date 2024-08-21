@@ -16,21 +16,8 @@ const HeroSection = () => {
             <h1 className=" font-[poppions-b] text-[42px] font-black text-center text-wrap">How Professional IT Services <br />
             Can Drive <span className=" text-[#FF3C00]"> Success.</span></h1>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {
-              CardApi.map((e,index)=>{
-                return(
-                  <>
-                  <div key={index}>
-                    <CompanyCard courseicon={e.courseicon} 
-                    course={e.course}
-                    courseds={e.courseds}
-                    />
-                  </div>
-                  </>
-                )
-              })
-            }
+          <div className=" ">
+            <CompanyCard/>
           </div>
         </div>
       </div>
